@@ -1,6 +1,3 @@
-import javax.imageio.plugins.tiff.GeoTIFFTagSet;
-import java.awt.geom.PathIterator;
-
 public class Pair <K,V> {
     private K first;
     private V second;
