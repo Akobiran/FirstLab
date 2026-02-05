@@ -1,20 +1,25 @@
-class PokemonBox{
-    private String PokemonValue;
-    public PokemonBox(String PokemonValue){
-        this.PokemonValue = PokemonValue;
+public class Pokemon {
+    private String name;
+    private String type;
+
+    public Pokemon(String name, String type){
+        this.name=name;
+        this.type=type;
     }
-    public String getPokemonValue(){
-        return PokemonValue;
+    public String getName(){
+        return name;
     }
-    public void setPokemonValue(String PokemonValue){
-        this.PokemonValue=PokemonValue;
+    public void setName(String name) {
+        this.name=name;
     }
-}
-public class Pokemon{
-    public static void main(String []args){
-        PokemonBox pokemonBox = new PokemonBox("Pikachu");
-        System.out.println(pokemonBox.getPokemonValue());
-        pokemonBox.setPokemonValue("Charmander");
-        System.out.println(pokemonBox.getPokemonValue());
+    public String getType(){
+        return  type;
+    }
+    public void setType(String type){
+        this.type=type ;
+    }
+    @Override
+    public String toString(){
+        return name+" ( "+type+ " )";
     }
 }
