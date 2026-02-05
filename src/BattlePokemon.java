@@ -1,7 +1,7 @@
 public class BattlePokemon  extends Pokemon{
     private int hp;
     public BattlePokemon(String name, String type, int hp){
-        super(name, type);
+        super(name,type);
         this.hp=hp;
     }
     public int getHp(){
@@ -9,6 +9,6 @@ public class BattlePokemon  extends Pokemon{
     }
     @Override
     public String toString(){
-        return super.getName()+ " " +super.getType()+"  "+ 60;
+        return super.getName()+"("+super.getType()+") "+60;
     }
 }
