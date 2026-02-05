@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args){
-        //This is the first test for Bad version without generics
+        //Step 1  testing  for Bad version without generics
         Pokemon pikachu = new Pokemon("Pikachu ", "Electric");
         Pokemon charmander = new Pokemon("Charmander", "Fire");
         System.out.println(pikachu);
