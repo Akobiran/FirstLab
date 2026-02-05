@@ -9,6 +9,6 @@ public class BattlePokemon  extends Pokemon{
     }
     @Override
     public String toString(){
-        return super.getName()+"("+super.getType()+") "+60;
+        return super.getName()+"("+super.getType()+"),"+60;
     }
 }
